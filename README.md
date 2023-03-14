@@ -1,5 +1,7 @@
 ## Peak Demand Status
 
+[Peak Status Website](https://peakstatus.locuroid.repl.co)
+
 ### Why?
 
 TEP (Tucson Electric Power) instituted a peak electricity program to allow people to save money on electricity. During off peak times, you can use energy as you normally do, at a cheaper rate. During on peak times, however, the energy you use is more expensive. 
