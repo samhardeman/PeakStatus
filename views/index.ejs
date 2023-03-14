@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:title" content="Peak Demand">
+    <meta property="og:url" content="https://PeakStatus.locuroid.repl.co">
+    <meta property="og:site_name" content="Peak Demand Status">
+    <meta property="og:description" content="See the Peak Demand Status">
+    <title id="title">Peak Demand Status</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script>
+      if("<%= locals.status %>" == "On Peak") {
+  document.body.style.backgroundColor = "#d52b1e";
+} else if("<%= locals.status %>" == "Off Peak") {
+  document.body.style.backgroundColor = "#1b9d44";
+}
+    </script>
+    <div class="maindiv">
+      <div class="title">
+        <h2>Peak Demand Status</h2>
+      </div>
+      <div class="status">
+        <h1 id="statText"><%= locals.status || 'Loading Status...' %></h1>
+      </div>
+      <div class="status-label">
+        <h3><%= locals.currentTime %></h3>
+      </div>
+      <div class="linkdiv">
+        <div class="small-text">
+          <p><a href="https://peakstatus.locuroid.repl.co/status">API Endpoint</a> | </p>
+        </div>
+        
+        <div class="small-text">
+          <p><a href="https://github.com/samdotnet/peakstatus">GitHub</a> | </p>
+        </div>
+        <div class="small-text">
+          <p>Views: <%=locals.visits || '0'%></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

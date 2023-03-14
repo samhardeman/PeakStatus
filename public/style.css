@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+* {
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+}
+
+body {
+  min-height: 95vh;
+  background-color: #22577a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title, .status, .status-label, .small-text {
+  text-align: center;
+}
+
+.linkdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.small-text {
+  font-size: 60%;
+  margin-right: 4px;
+}
